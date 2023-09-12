@@ -1,0 +1,27 @@
+.conteneur{
+    background-color: aquamarine;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    margin-left: 650px;
+    margin-top: 150px;
+  }
+  .contenu{
+    display: flex;
+  justify-content: center;
+  }
+  .forme{
+        width: 300px;
+        height: 320px;
+  }
+
+  .champsTXT{
+    width: 300px;
+  height: 29px;
+  }
+  .BTN{
+    margin-top: 16PX;
+    width: 100px;
+  height: 29px;
+  }
+  
