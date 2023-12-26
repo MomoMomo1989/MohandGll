@@ -1,0 +1,90 @@
+body{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.conteneurGeneral{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+.dtt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteneurtitre{
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteneurtitre h1{
+  font-size: 40px;
+}
+.dtt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+.conteneur{
+    width: 30%;
+    border: 1px;
+    box-shadow: inset 0 0 1em rgb(214, 212, 199),
+    0 0 1em rgb(124, 124, 124);
+
+}
+.quetion{
+    margin: 4px 4px 4px 4px;
+    display: flex;
+    justify-content:left;
+}
+.quetion p{
+    font-size: larger;
+    font-style: italic;
+}
+.reponses{
+    margin: 6px 6px 6px 6px;
+}
+.s {
+    margin: 8px 8px 8px 8px;
+}
+.boutt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+.btn{
+    width: 250px;
+    height: 75px;
+    font-size: 25px;
+    box-shadow:inset 0 0 1em rgb(117, 105, 23) ;
+}
+.dtt21{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+.conteneur1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    border: 1px;
+    box-shadow: inset 0 0 1em rgb(214, 212, 199),
+    0 0 1em rgb(124, 124, 124);
+
+}
+.conteneur1 p{
+    font-size: larger;
+    margin: 5px;
+}
+.comment{
+    font-size:medium;
+    margin: 5px;
+}
