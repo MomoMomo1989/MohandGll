@@ -3,17 +3,13 @@ if (navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position => { 
         let altt = position.coords.latitude
         let lan = position.coords.longitude
-        console.log(altt , lan)
         appelAPI(altt, lan)
     })
 }
+
 function appelAPI(altt, lan){
-    fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${altt}&lon=${lan}&exclude=minutely&units=metric&lang=fr&appid=${klapi}`)
-    .then ((reponse) => {
-    
-       console.log(reponse.json)
-    })
-    .then ((data) => {
-        console.log(data)
-     })
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${altt}&lon=${lan}&appid=${klapi}`)
+    .then (reponse => reponse.json())
+    .then ((data) => console.table(data))
+    document.querySelector("#V1").innerHTML = data.coord; 
 }
