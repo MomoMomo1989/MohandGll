@@ -1,0 +1,31 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre {
+    border-collapse: collapse;
+    border: 1px solid;
+    border-color: blue;
+    min-width: 300px;
+}
+thead th{
+    background-color: rgb(90, 71, 124);
+    margin: 0px;
+    padding: 4px;
+    font-size : 25px;
+    color: #ddd;
+}
+tbody td {
+    padding: 4px; 
+    font-size : 20px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+tbody :hover {
+    background-color: rgb(210, 188, 247); 
+}
