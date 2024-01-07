@@ -28,4 +28,19 @@ fetch("fichier2.json")
 });
 
 document.querySelector("#")
+function remp(ident){
+   
+    fetch("fichier2.json")
+    .then(function(rep2){
+        return rep2.json();
+    })
+    .then(function(data2){
+        sortie1 = [];
+        for (i = 0 ; i < 3; i++ ){
+            console.log("cc  " ,i)
+            sortie1 += `<a href=""><li id="${i}list">${data1.members[i].name}</li><a/>`;
+        }
+        lign2.innerHTML = sortie1;   
+    });
 
+}
