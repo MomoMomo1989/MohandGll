@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(233, 235, 235);
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteneurnav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 90%;
+}
+.newdemande{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #313715;
+    color: aliceblue;
+    font-size: large;
+    transition: 0.9s;
+}
+.newdemande:hover{
+    width: 240px;
+    background-color: #313715;
+    color: aliceblue;
+    font-size: larger;
+    box-shadow:
+    inset 0 0 1em #939F5C,
+    0 0 2em rgb(223, 221, 221);
+}
+.profil{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.profil img{
+    height: 40px;
+    margin-right:10px;
+}
+.nomuser{
+    font-size: larger;
+     color: #313715;
+}
+.conteneurdemande{
+    height: 400px;
+    width: 90%;
+    border: 1px solid #313715;
+    border-radius: 5px;
+}
+.conteneurtable{
+    margin-top: 40px;
+    height: auto;
+    width: 90%; 
+}
+.tbhistoriqueb{
+    height: 400px;
+    width: 100%;
+    border: 1px solid #313715;
+    border-radius: 5px; 
+}
+.selectchek{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.radio1{
+    margin-right: 15px;
+}
+.btnr{
+    font-size: larger;   
+}
+.combopays{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.combopayschild{
+    height: 35px;
+    width: 30%;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.9s;
+    box-shadow:
+    0 0 1em #939F5C;
+}
+.combopayschild:hover{
+    width: 32%;
+    background-color:#939F5C ;
+    box-shadow:
+    inset 0 0 1em #939F5C,
+    0 0 2em rgb(223, 221, 221);
+}
+.inputinfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.dvpasss{
+    width:auto;
+    height: auto;
+    font-size: large;
+}
+.dvpasss input{
+    font-size: smaller;
+    height: 30px;
+    outline: none;
+    padding: 4px;
+    margin-left: 2px;
+    border:1px solid #313715;
+    border-radius: 2px;
+}
+.inputautres{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.mission{
+    display: flex;
+    font-size: large;
+}
+.mission textarea{
+    height: 70px;
+    width: 30vw;
+    margin-left: 8px;
+    margin-bottom: 30px;
+    outline: none;
+    border:1px solid #313715;
+    border-radius: 2px;
+    font-size: 16px;
+}

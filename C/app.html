@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="conteneurnav">
+        <button class="newdemande">Nouvelle demande</button>
+        <a href="#" class="profil">
+            <img src="images/US.png" alt="">
+            <p class="nomuser">User</p>
+        </a>
+    </div>
+    <div class="conteneurdemande">
+          <div class="selectchek">
+            <div class="radio1">
+                <input type="radio" id="nat" name="drone" value=""  />
+                <label for="nat" class="btnr">National</label>
+            </div>
+              <div>
+                <input type="radio" id="huey" name="drone" value="huey" />
+                <label for="huey" class="btnr">International</label>
+              </div>
+          </div>
+          <div class="combopays">
+            <select name="" id="" class="combopayschild"><option value="">... Seletionner un pays </option></select>
+          </div>
+          <div class="inputinfo">
+            <div class="dvpasss">
+                <label for="">Départ</label>
+                <input type="text" name="" id="" placeholder="Ville de départ">
+            </div>
+            <div class="dvpasss">
+                <label for="">Départ</label>
+                <input type="date" name="" id="">
+            </div>
+            <div class="dvpasss">
+                <label for="">Retour</label>
+                <input type="text" name="" id="" placeholder="Ville de retour">
+            </div>
+            <div class="dvpasss">
+                <label for="">Retour</label>
+                <input type="date" name="" id="">
+            </div>
+          </div>
+          <div class="inputautres">
+            <div class="mission">
+                <label for="">Mission</label>
+                <textarea name="" id="" ></textarea>
+            </div>
+            <div class="mission">
+                <label for="">Observation</label>
+                <textarea name="" id="" ></textarea>
+            </div>
+
+          </div>
+    </div>
+    <div class="conteneurtable">
+        <table class="tbhistoriqueb">
+            <thead>
+                <tr>
+                    <th scope="col">Déstination</th>
+                    <th scope="col">Départ de.</th>
+                    <th scope="col">Date de départ</th>
+                    <th scope="col">Retour de.</th>
+                    <th scope="col">Date de retour</th>
+                    <th scope="col">Observation</th>
+                  </tr>
+            </thead>
+            <tr>
+                <th scope="row">The Lion King (2019 remake)</th>
+                <td data-title="Released">2019</td>
+                <td data-title="Studio">Disney</td>
+                <td data-title="Worldwide Gross" data-type="currency">$1,657,870,986</td>
+                <td data-title="Domestic Gross" data-type="currency">$543,638,043</td>
+                <td data-title="International Gross" data-type="currency">$1,114,232,943</td>
+              </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
