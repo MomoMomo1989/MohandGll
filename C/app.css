@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
+		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+}
 body{
     background-color: rgb(233, 235, 235);
     margin: 0px;
@@ -5,9 +10,11 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    font-family: 'Roboto', sans-serif;
 }
 .conteneurnav{
+    margin-left: 20px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -27,11 +34,11 @@ body{
 }
 .newdemande:hover{
     width: 240px;
-    background-color: #313715;
+    background-color: #939F5C;
     color: aliceblue;
     font-size: larger;
     box-shadow:
-    inset 0 0 1em #939F5C,
+    inset 0 0 1em #313715,
     0 0 2em rgb(223, 221, 221);
 }
 .profil{
@@ -48,47 +55,75 @@ body{
     font-size: larger;
      color: #313715;
 }
-.conteneurdemande{
+.Conteneurg{
     height: 400px;
-    width: 90%;
-    border: 1px solid #313715;
-    border-radius: 5px;
+    width: 100%;  
+    display: flex;
+}
+.profilinfo{
+    display: flex;
+    margin-left: 20px;
+    height: 370px;
+    width: 45%;
+    border-radius: 5px; 
+     
+}
+.conteneurdemande{
+    margin-left: 20px;
+    height: 370px;
+    width: 50%;
+    box-shadow: 0 0 1em #383838;
+    border-radius: 10px;
 }
 .conteneurtable{
-    margin-top: 40px;
-    height: auto;
-    width: 90%; 
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 250px;
+    width: 96%; 
+    border-radius: 20px;
+    max-height: 251px;
 }
 .tbhistoriqueb{
-    height: 400px;
+    height: 100%;
     width: 100%;
-    border: 1px solid #313715;
+    box-shadow: 0 0 1em #383838;
     border-radius: 5px; 
+    max-height: 251px;
 }
 .selectchek{
+    margin-left: 70px;
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 .radio1{
     margin-right: 15px;
+}
+input[type='radio'] {
+    accent-color: #313715;
 }
 .btnr{
     font-size: larger;   
 }
 .combopays{
+    margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
+}
+.combopays label{
+    font-size: large;
+    margin-right: 22px;
 }
 .combopayschild{
     height: 35px;
     width: 30%;
     outline: none;
-    border-radius: 10px;
+    
     transition: 0.9s;
     box-shadow:
     0 0 1em #939F5C;
@@ -101,9 +136,14 @@ body{
     0 0 2em rgb(223, 221, 221);
 }
 .inputinfo{
-    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+.depart{
+display: flex;
+margin-bottom: 20px;
 }
 .dvpasss{
     width:auto;
@@ -115,26 +155,214 @@ body{
     height: 30px;
     outline: none;
     padding: 4px;
-    margin-left: 2px;
+    margin-right: 20px;
+    margin-left: 5px;
     border:1px solid #313715;
     border-radius: 2px;
 }
 .inputautres{
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.inputautres button{
+    position: relative;
+    top: 60px;
 }
 .mission{
     display: flex;
     font-size: large;
 }
 .mission textarea{
-    height: 70px;
-    width: 30vw;
-    margin-left: 8px;
-    margin-bottom: 30px;
+    height: 100px;
+    width: 28vw;
+    margin-left: 20px;
+    margin-bottom: 10px;
     outline: none;
     border:1px solid #313715;
     border-radius: 2px;
     font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color: #313715;
+    height: 40px;
+}
+thead th{
+    font-size: large;
+    color: azure;
+}
+thead th:not(:last-child){
+    border-right: 1px solid #fff;
+}
+td, th{
+    margin: 0px;
+    padding: 6px;
+    border: 1px solid #939F5C;
+}
+
+tbody td{
+    margin-top: 40px;
+    padding: 6px;
+}
+.contentinfoprofil {
+    margin: 2px;
+    height: 100%;
+    width: 58%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 1em #383838;
+}
+.nbrdemande {
+    margin: 2px;
+    height: 100%;
+    width: 38%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 1em #383838;
+}
+.contentinfoprofil{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+}
+.contentinfoprofil label{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: x-large;
+    color: #151807;
+}
+.contentinfoprofil dir{
+    border-top: 40px !important; 
+    font-weight: bolder !important;
+}
+.validp{
+    margin-top: 20px;
+}
+.nbrdemande{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nbrenv{
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    color: #313715;
+} 
+.nbrdemande h1, p{
+    margin-left: 10px;
+}
+.nbrdemande p{
+    font-size: 12px;
+    font-style: italic;
+}
+.overl{
+    display: none;
+    background-color: #383838;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+}
+.modif-user{
+    height: 60vh;
+    width: 25vw;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 2px 2px 2em #2b2b2b;
+    background-color: #adadad;
+    transition: all 1s;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    z-index: 3;
+}
+.active-modif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteneurlogin{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    width: 241px;
+}
+.validite-pass{
+    margin-top: 20px;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.validite-pass input{
+    margin-left: 1px;
+    width: 100px;
+    height: 35px;
+    outline: none;
+}
+.dvpasss1{
+    margin-top: 20px;
+    width: 280px;
+}
+.dvpasss1 input{
+    margin-left: 1px;
+    width: 230px;
+    height: 35px;
+    outline: none;
+}
+.dvpasss1 select{
+    margin-left: 1px;
+    border-radius: 1px;
+    width: 240px;
+    height: 35px;
+    outline: none;
+}
+.conteneur-btn{
+width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+}
+.enregistrer{
+    margin-top: 40px;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #313715;
+    color: aliceblue;
+    font-size: large;
+    transition: 0.9s;
+}
+.enregistrer:hover{
+    width: 240px;
+    background-color: #939F5C;
+    color: aliceblue;
+    font-size: larger;
+    box-shadow:
+    inset 0 0 1em #313715,
+    0 0 2em rgb(223, 221, 221);
+}
+.close{
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.close img{
+    height: 20px;
+    width: 20px;
 }

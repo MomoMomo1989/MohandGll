@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    }
+    .imagefond{
+    height: 100vh;
+    width: 100vw;
+    filter: blur(15px);
+    }
+    .conteneur{
+      position: absolute;
+      height: auto;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .user{
+        background-color: #313715;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        margin-bottom: -50px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imguser1{
+     height: 60%;
+     width: 60%;
+     padding-left: 4px;
+    }
+    .conteneurlogin {
+        width: 550px;
+        height: auto;
+        background-color: #E2F9B8;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: center;
+        box-shadow:
+        inset 0 0 4em #313715,
+        0 0 6em rgb(0, 0, 0);
+    }
+    .btnSub{
+        margin-top: 20px;
+        height: 50px;
+        width: 90%;
+        border-radius: 15px;
+        font-size: medium;
+        color: #fff;
+        background-color: #313715;
+        border: 0px;
+        transition: 0.9s;
+    }
+    .btnSub:hover{
+        width: 130%;
+        background-color: #31361a;
+        color: rgb(189, 181, 181);
+        box-shadow:
+        inset 0 0 1em #939F5C,
+        0 0 2em rgb(223, 221, 221);
+    }
+    .dvemail{
+        margin-top: 80px;
+        background-color: #313715;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        border: 0px;
+    }
+    .dvpasss{
+        margin-top: 20px;
+        background-color: #313715;
+        width: 90%;
+        height: 50px;
+        display: flex;
+    }
+    input{
+        width: 100%;
+        outline-style: none;
+        outline: none;
+        font-size: larger;
+        background-color: #BBCE8A;
+        padding-left: 10px;
+    }
+    .imgverou{
+        height: 90%;
+    }
+    .inform{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: end;
+        width: 90%;
+    }
+    .infoinfo{
+        font-style: italic;
+        text-decoration: none;
+        color: #313715;
+    }
+    .infoinfo:hover{
+        color: #5b613b;
+    }
+    .chek{
+        width: 20px;
+    }
