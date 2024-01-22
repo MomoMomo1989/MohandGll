@@ -1,0 +1,111 @@
+.contnt-p-2024{
+    height: 550px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.content-info{
+    height: 450px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proj{
+    position: relative;
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow:hidden;
+    cursor: pointer;
+    
+}
+.proj:hover .content-descript-proj{
+    visibility: visible;
+}
+
+.proj h1{
+    padding: 10px;
+    position: absolute;
+    color: #0f0b0b;
+    font-size: 30px;
+    top: 0;
+    left: 25%;
+    visibility: visible;
+}
+.proj:hover h1{
+    visibility: hidden;
+}
+.proj img{
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+.proj:hover img{
+    transform: scale(1.1);
+}
+.content-descript-proj{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(150, 0, 0, 0.507);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.content-descript-proj p{
+    padding: 20px;
+    position: absolute;
+    color: #c7b9b9;
+    font-size: 22px;
+}
+.cntnt-btn{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnsavoirplus{
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+}
+@media screen and (max-width:450px) {
+    .content-info{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .proj{
+        width: 90%;
+    }
+    .content-descript-proj p{
+        font-size: 15px;
+    }
+    .proj{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .btnsavoirplus{
+        font-size: 15px;
+    }
+}
