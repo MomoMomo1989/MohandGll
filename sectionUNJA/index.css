@@ -1,5 +1,5 @@
 .contnt-p-2024{
-    height: 550px;
+    height: 650px;
     width: 100%;
     background: #fff;
     display: flex;
@@ -9,7 +9,7 @@
 
 }
 .content-info{
-    height: 450px;
+    height: 550px;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 .proj h1{
     padding: 10px;
     position: absolute;
-    color: #0f0b0b;
+    color: #6bac03;
     font-size: 30px;
     top: 0;
     left: 25%;
@@ -88,13 +88,17 @@
     outline: none;
 }
 @media screen and (max-width:450px) {
-    .content-info{
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .contnt-p-2024{
+        height: 850px;
     }
+        .content-info{
+            width: 95%;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     .proj{
         width: 90%;
     }
@@ -104,8 +108,10 @@
     .proj{
         margin-top: 15px;
         margin-bottom: 15px;
+        height: 100%;
     }
     .btnsavoirplus{
         font-size: 15px;
+        text-decoration: none;
     }
 }
