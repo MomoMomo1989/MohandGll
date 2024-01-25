@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’),
+		url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+}
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-info{
+    height: 40%;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+.tb-recept{
+    height: 100%;
+    width: 39%;
+    box-shadow: 0 0 1em #363535;
+    border-radius: 10px;
+}
+.recpt{
+    height: 100%;
+    width: 19%;
+    box-shadow: 0 0 1em #363535;
+    border-radius: 10px;
+}
+.tbl-plus-info{
+    margin-top: 30px;
+    height: 50%;
+    width: 95%;
+    box-shadow: 0 0 1em #363535;
+    border-radius: 10px;
+}
+table{
+    height: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    height: 40px;
+    width: 100%;
+    background-color: #313715;
+
+}
+thead tr{
+    border-radius: 10px;
+}
+thead th{
+    color: antiquewhite;
+    font-size: 18px;
+}
+.recpt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nbr-rec{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nbr-rec h1{
+    font-size: 180px;
+   color: #313715;
+   margin: 5px;
+}
+.titre-ann{
+    margin-top: 5px;
+    margin-bottom: 0px; 
+    height: 25px;
+}
+.titre-ann p{
+    margin-top: 0px;
+    font-size: 20px;
+    color: #202020;
+}
+.tous{
+    margin-top: 5px;
+    margin-bottom: 0px; 
+    height: 25px;
+}
+.tous p{
+    margin-top: 0px;
+    font-size: 15px;
+    color: #202020;
+}
+thead th:not(:last-child){
+    border-right: 1px solid #fff;
+}
+td, th{
+    margin: 0px;
+    padding: 6px;
+    border: 1px solid #939F5C;
+}
+
+tbody td{
+    margin-top: 40px;
+    padding: 6px;
+}
