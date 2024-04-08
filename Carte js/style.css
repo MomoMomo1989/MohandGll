@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.conteneur_de_carte{
+    height: 350px;
+    width: 260px;
+    background-color: rgb(184, 175, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.3);
+}
+.Numero_Carte{
+    font-size: 270px;
+    color: aliceblue;
+}
+.Description_carte{
+    font-size: 30px;
+    color: #fff;
+}
