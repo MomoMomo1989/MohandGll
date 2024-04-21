@@ -1,0 +1,49 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Models\reservation;
+use App\Models\profile;
+use Auth;
+use Illuminate\Http\Request;
+use App\Support\Collection ;
+class TraitementDemende extends Controller
+{
+    public function traitement_d(Request $request){
+    $profile = profile::where('user_id', Auth::id())->get();
+       $profil = profile::where('user_id', Auth::id())->get()->first()->id;
+       $request = reservation::where('profiles_id',$profil)
+       ->Paginate(3);
+       
+        return view('app_Client/traitement_demande',[
+            'Demandes' => $request,
+            // 'profiles' => $profile->nom_prenom,
+            // dd($profile->nom_prenom)
+        ]);
+    }
+    public function affichage_TB_C(Request $request){
+        
+        $profile = profile::where('user_id', Auth::id())->get()->first()->id;
+        $request = reservation::where('profiles_id',$profile)->Paginate(2);
+        $valide = reservation::where('profiles_id',$profile)
+        ->where('etat_reserv','Validé')
+        ->count();
+        $annule = reservation::where('profiles_id',$profile)
+        ->where('etat_reserv','Annulé')
+        ->count();
+        $Enattente = reservation::where('profiles_id',$profile)
+        ->where('etat_reserv','En attente')
+        ->count();
+        return view('app_Client/homeClient',[
+            'reservation_ps' => $request,
+            'etat_reserv_v' => $valide,
+            'etat_reserv_a' => $annule,
+            'etat_reserv_att' => $Enattente,
+            'des_types' => ['Total','Validé','Annulé','En attente'],
+        ]);
+    }
+    public function destroy_demande($id){
+        $demande = reservation::find($id);
+        $demande->delete();
+        return redirect('/T_B')->with('status','la reservation a ete supprimer');
+    }
+}
